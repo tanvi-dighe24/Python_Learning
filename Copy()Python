@@ -1,1 +1,29 @@
+Copy() in Python :
+methods and functions used to create duplicates of objects, particularly mutable ones like lists, dictionaries, and sets, to ensure that changes to the copy do not affect the original
+mechanism is provided by the built-in copy() methods and the functions within the copy module. 
 
+#types of Copy():
+1)General Copy()
+2)Shallow Copy()
+3)Deep Copy()
+
+#Shallow() Copy: creates a new top-level container object but populates it with references to the nested objects found in the original.
+                  Changes made to a mutable nested object (like a list inside another list) will be reflected in both the original and the copied object because they share the same inner object in memory. 
+ >How to create a shallow copy:
+.Use the copy.copy() function from the copy module.
+.For lists specifically, you can use the built-in list.copy() method or slicing syntax [:]
+.For dictionaries, you can use the .copy() method or the {**old_dict} unpacking operator. 
+
+#Example of shallow copy:
+old_list = [[1, 2], [3, 4]]
+new_list = copy.copy(old_list) # Create a shallow copy
+
+#Deep Copy(): Deep copy creates a new independent object and recursively copies all nested objects within the original. 
+              The original and the deep copy are entirely separate in memory, so changes to one do not affect the other, even for nested mutable items. 
+
+#How to create a deep copy:
+Use the copy.deepcopy() function from the copy module. 
+
+#Example of deep copy:
+old_list = [[1, 2], [3, 4]]
+new_list = copy.deepcopy(old_list) # Create a deep copy
