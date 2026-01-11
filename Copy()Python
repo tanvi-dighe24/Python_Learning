@@ -1,5 +1,5 @@
-Copy() in Python :
-methods and functions used to create duplicates of objects, particularly mutable ones like lists, dictionaries, and sets, to ensure that changes to the copy do not affect the original
+Copy() in Python : Why? Assignment statements in Python do not copy objects, they create bindings between a target and an object. 
+But Copy() methods and functions used to create duplicates of objects, particularly mutable ones like lists, dictionaries, and sets, to ensure that changes to the copy do not affect the original
 mechanism is provided by the built-in copy() methods and the functions within the copy module. 
 
 #types of Copy():
