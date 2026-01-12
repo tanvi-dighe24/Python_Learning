@@ -7,3 +7,4 @@ Language for programing : Pyhton
 Topic covered: Basic to Advance level of python
 
 keep going and don't loose hopes!
+Champions are loosers who never stop trying and learning :)
