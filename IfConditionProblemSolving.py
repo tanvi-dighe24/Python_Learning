@@ -23,12 +23,13 @@ else:
 #It is a Special Character
 
 #Even Or Odd
-num=input('enter num')    
+num=int(input('enter num'))    
 if num % 2 == 0:
     print("Even")
 else:
     print("Odd")
-#O/P: error
+#O/P: enter num 6
+#Even
 
 
 #Same Memory Location Or NOt
@@ -82,3 +83,4 @@ else:
 
 
     
+
