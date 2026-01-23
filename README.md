@@ -7,7 +7,7 @@ Topic covered: Basic to Advance level of python, libraries of python
 Framework: Django
 
 it's been a many days where I m into solving problems of coding through py.programming.
-goal is to reach at a level where I can confidently set an example as a proof saying "Real Hardworks Pays Off Double than unconventional shortcuts":)
+my goal is to reach at a level where, I can confidently set an example as a proof saying "Real Hardworks Pays Off Double than unconventional shortcuts":)
 
 keep going and don't loose hopes!
 Champions are loosers who never stop trying and learning :)
