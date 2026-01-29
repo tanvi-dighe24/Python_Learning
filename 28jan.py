@@ -1,4 +1,4 @@
-#if # 1. Age checking for vote
+#if statement: # 1. Age checking for vote
 if age >= 18
     print("Eligible for vote")
 
@@ -128,3 +128,4 @@ for i in range(len(t)):
     
 
     
+
