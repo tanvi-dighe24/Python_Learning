@@ -1,0 +1,66 @@
+# 1. WORD COUNT IN A STRING
+text = "learning python is fun and easy"
+words = text.split()
+print("1. Word Count:", len(words))
+# Output: 6
+
+# 2. JOIN LIST INTO A SINGLE SENTENCE
+items = ['apple', 'orange', 'grapes']
+result = " and ".join(items)
+print("2. Joined String:", result)
+# Output: apple and orange and grapes
+
+# 3. RANGE WITH START, STOP, AND STEP
+print("3. Even numbers:", end=" ")
+for i in range(2, 11, 2):
+    print(i, end=" ")
+# Output: 2 4 6 8 10 
+
+# 4. REVERSE A STRING (Using Join and Reversed)
+s4 = "hello"
+reversed_s = "".join(reversed(s4))
+print("\n4. Reversed String:", reversed_s)
+# Output: olleh
+
+# 5. SPLIT BY DELIMITER (Comma separated)
+data = "python,java,c++,ruby"
+tech_stack = data.split(',')
+print("5. Split by Comma:", tech_stack)
+# Output: ['python', 'java', 'c++', 'ruby']
+
+# 6. REVERSE COUNTDOWN USING RANGE
+print("6. Countdown:", end=" ")
+for i in range(5, 0, -1):
+    print(i, end=" ")
+# Output: 5 4 3 2 1 
+
+# 7. CHARACTER FREQUENCY (Using Dictionary)
+s7 = "success"
+freq = {}
+for char in s7:
+    freq[char] = freq.get(char, 0) + 1
+print("\n7. Frequency Count:", freq)
+# Output: {'s': 3, 'u': 1, 'c': 2, 'e': 1}
+
+# 8. BREAK STATEMENT (Stop at number 7)
+print("8. Break Demo:", end=" ")
+for i in range(1, 20):
+    if i == 7:
+        break
+    print(i, end=" ")
+# Output: 1 2 3 4 5 6 
+
+# 9. CONTINUE STATEMENT (Skip number 3)
+print("\n9. Continue Demo:", end=" ")
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i, end=" ")
+# Output: 1 2 4 5 
+
+# 10. GENERATING A LIST OF MULTIPLES
+multiples = []
+for i in range(5, 51, 5):
+    multiples.append(i)
+print("\n10. Multiples of 5:", multiples)
+# Output: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
