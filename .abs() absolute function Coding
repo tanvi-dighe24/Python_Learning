@@ -1,0 +1,61 @@
+# 1. BASIC POSITIVE NUMBER
+print("1. Positive remains:", abs(10))
+# Output: 10
+
+# 2. BASIC NEGATIVE NUMBER
+print("2. Negative becomes positive:", abs(-25))
+# Output: 25
+
+# 3. FLOATING POINT (DECIMALS)
+print("3. Negative float:", abs(-10.55))
+# Output: 10.55
+
+# 4. CALCULATING DIFFERENCE (Distance between two numbers)
+# Useful for finding the gap between two values regardless of which is larger
+a = 10
+b = 15
+print("4. Difference:", abs(a - b))
+# Output: 5
+
+# 5. ABSOLUTE VALUE IN A LIST
+nums = [-5, 10, -15, 20]
+abs_nums = [abs(x) for x in nums]
+print("5. Absolute List:", abs_nums)
+# Output: [5, 10, 15, 20]
+
+# 6. FINDING THE TOTAL MAGNITUDE
+# Summing up absolute errors or changes
+changes = [-10, 5, -2, 8]
+total_change = sum(abs(x) for x in changes)
+print("6. Total change:", total_change)
+# Output: 25
+
+# 7. SORTING BY MAGNITUDE
+# Sorting numbers based on their absolute value rather than their actual value
+L7 = [-100, 5, -20, 2]
+sorted_L7 = sorted(L7, key=abs)
+print("7. Sorted by abs:", sorted_L7)
+# Output: [2, 5, -20, -100]
+
+# 8. COMPLEX NUMBERS (Magnitude)
+# For complex numbers, it returns the magnitude (sqrt(a^2 + b^2))
+complex_num = 3 + 4j
+print("8. Complex magnitude:", abs(complex_num))
+# Output: 5.0
+
+# 9. VALIDATING INPUT RANGE
+# Checking if a number is within a certain distance from zero
+user_input = -45
+if abs(user_input) > 50:
+    print("9. Value is too far from zero")
+else:
+    print("9. Value is within range")
+# Output: Value is within range
+
+# 10. MINIMUM DIFFERENCE FINDER
+# Finding which number in a list is closest to a target
+target = 50
+values = [42, 55, 60]
+closest = min(values, key=lambda x: abs(x - target))
+print("10. Closest to 50 is:", closest)
+# Output: 55
