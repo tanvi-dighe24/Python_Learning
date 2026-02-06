@@ -1,0 +1,113 @@
+# 1. Map string elements to a dictionary with first and last characters
+L1 = ['hai', 34, 3.4, 'hello', 90, 'byebye']
+out1 = {}
+for item in L1:
+    if type(item) == str:
+        out1[item] = item[0] + item[-1]
+print("1. Dictionary Map:", out1)
+# Output: {'hai': 'hi', 'hello': 'ho', 'byebye': 'be'}
+
+# 2. Extract string values from a list only if the string is a palindrome
+L2 = ['madam', 'python', 'level', 'world']
+palindromes = []
+for s in L2:
+    if s == s[::-1]:
+        palindromes.append(s)
+print("2. Palindromes:", palindromes)
+# Output: ['madam', 'level']
+
+# 3. Return the positions of vowels present in the given string
+s3 = 'apple'
+vowels = 'aeiou'
+out3 = {}
+for i in range(len(s3)):
+    if s3[i] in vowels:
+        out3[s3[i]] = i
+print("3. Vowel Positions:", out3)
+# Output: {'a': 0, 'e': 4}
+
+# 4. Count the number of words in a string
+s4 = 'hai hello how are you bye'
+words = s4.split()
+print("4. Word Count:", len(words))
+# Output: 6
+
+# 5. Extract upper, lower, digit, and special characters present in a string
+s5 = 'Ha6753jkuds@hsdy'
+lower, upper, digit, spec = '', '', '', ''
+for char in s5:
+    if char.islower(): lower += char
+    elif char.isupper(): upper += char
+    elif char.isdigit(): digit += char
+    else: spec += char
+print("5. Categorized:", lower, upper, digit, spec)
+# Output: ajkudshsdy H 6753 @
+
+# 6. Print the square of all the integers present in a list
+L6 = [2, 'hi', 5, 10.5, 3]
+squares = []
+for i in L6:
+    if type(i) == int:
+        squares.append(i**2)
+print("6. Squares:", squares)
+# Output: [4, 25, 9]
+
+# 7. Binary bit flip: replace '0' with '1' and '1' with '0'
+input7 = '0110110010'
+output7 = ''
+for bit in input7:
+    if bit == '0': output7 += '1'
+    else: output7 += '0'
+print("7. Bit Flip:", output7)
+# Output: 1001001101
+
+# 8. Character frequency count (Technical Round Question)
+s8 = 'abacbaacc'
+freq = {}
+for char in s8:
+    if char in freq: freq[char] += 1
+    else: freq[char] = 1
+print("8. Frequency:", freq)
+# Output: {'a': 4, 'b': 2, 'c': 3}
+
+# 9. Break statement: Stops when number 5 is reached
+print("9. Break Result:")
+for i in range(1, 10):
+    if i == 5:
+        break
+    print(i, end=" ")
+# Output: 1 2 3 4 
+
+# 10. Continue statement: Skips the number 3
+print("\n10. Continue Result:")
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i, end=" ")
+# Output: 1 2 4 5 
+
+# 11. Pass statement: Placeholder for future logic
+print("\n11. Pass Result:")
+for i in [1, 2, 3]:
+    if i == 2:
+        pass
+    print(i, end=" ")
+# Output: 1 2 3
+
+# 12. Range Function: Simple 0 to 4
+print("\n12. Range(5):")
+for i in range(5):
+    print(i, end=" ")
+# Output: 0 1 2 3 4
+
+# 13. Range Function: Start, Stop, and Step (Even numbers)
+print("\n13. Range(2, 11, 2):")
+for i in range(2, 11, 2):
+    print(i, end=" ")
+# Output: 2 4 6 8 10
+
+# 14. Range Function: Reverse Countdown
+print("\n14. Range(5, 0, -1):")
+for i in range(5, 0, -1):
+    print(i, end=" ")
+# Output: 5 4 3 2 1
