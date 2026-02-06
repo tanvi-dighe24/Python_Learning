@@ -1,0 +1,49 @@
+# 1. INTEGER (Whole numbers)
+x1 = 100
+print("1.", type(x1))
+# Output: <class 'int'>
+
+# 2. FLOAT (Decimal numbers)
+x2 = 10.5
+print("2.", type(x2))
+# Output: <class 'float'>
+
+# 3. STRING (Text)
+x3 = "Python"
+print("3.", type(x3))
+# Output: <class 'str'>
+
+# 4. BOOLEAN (True or False)
+x4 = True
+print("4.", type(x4))
+# Output: <class 'bool'>
+
+# 5. LIST (Ordered, mutable collection)
+x5 = [1, 2, 3]
+print("5.", type(x5))
+# Output: <class 'list'>
+
+# 6. TUPLE (Ordered, immutable collection)
+x6 = (1, 2, 3)
+print("6.", type(x6))
+# Output: <class 'tuple'>
+
+# 7. DICTIONARY (Key-Value pairs)
+x7 = {"name": "Alice", "age": 25}
+print("7.", type(x7))
+# Output: <class 'dict'>
+
+# 8. SET (Unordered collection of unique items)
+x8 = {1, 2, 3}
+print("8.", type(x8))
+# Output: <class 'set'>
+
+# 9. NONE TYPE (Representing nothing)
+x9 = None
+print("9.", type(x9))
+# Output: <class 'NoneType'>
+
+# 10. COMPLEX (Real and imaginary numbers)
+x10 = 2 + 3j
+print("10.", type(x10))
+# Output: <class 'complex'>
