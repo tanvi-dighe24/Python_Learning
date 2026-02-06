@@ -1,0 +1,52 @@
+# 1. BASIC CONVERSION
+print("1. ASCII 65 is:", chr(65))
+# Output: A
+
+# 2. CONVERTING LOWERCASE
+print("2. ASCII 97 is:", chr(97))
+# Output: a
+
+# 3. PRINTING SYMBOLS
+print("3. ASCII 36 is:", chr(36))
+# Output: $
+
+# 4. USING RANGE TO PRINT ALPHABETS (A-E)
+print("4. Alphabets:", end=" ")
+for i in range(65, 70):
+    print(chr(i), end=" ")
+# Output: A B C D E
+
+# 5. GENERATING A LIST OF DIGITS AS STRINGS
+digits = []
+for i in range(48, 58):
+    digits.append(chr(i))
+print("\n5. Digit chars:", digits)
+# Output: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+
+# 6. PRINTING GREEK LETTERS (Unicode)
+print("6. Greek Omega:", chr(937))
+# Output: Ω
+
+# 7. PRINTING EMOJIS (Unicode)
+print("7. Smiley:", chr(128512))
+# Output: 😀
+
+# 8. CONVERTING A LIST OF INTEGERS TO A STRING
+codes = [72, 101, 108, 108, 111]
+result = "".join([chr(c) for c in codes])
+print("8. Joined String:", result)
+# Output: Hello
+
+# 9. FINDING THE NEXT CHARACTER
+char = 'B'
+next_char = chr(ord(char) + 1)
+print("9. Character after B:", next_char)
+# Output: C
+
+# 10. CAESAR CIPHER LOGIC (Shift characters by 1)
+text = "abc"
+cipher = ""
+for char in text:
+    cipher += chr(ord(char) + 1)
+print("10. Shifted Text:", cipher)
+# Output: bcd
