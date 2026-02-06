@@ -1,0 +1,51 @@
+# 1. COUNT CHARACTERS IN A STRING
+s1 = "banana"
+print("1. Count of 'a':", s1.count('a'))
+# Output: 3
+
+# 2. COUNT SUBSTRINGS
+s2 = "hello hello world"
+print("2. Count of 'hello':", s2.count('hello'))
+# Output: 2
+
+# 3. COUNT ITEMS IN A LIST
+L3 = [10, 20, 10, 30, 10, 40]
+print("3. Count of 10 in list:", L3.count(10))
+# Output: 3
+
+# 4. COUNT CASE-SENSITIVE CHARACTERS
+s4 = "Apple apple APPLE"
+print("4. Count of 'A' (Upper):", s4.count('A'))
+# Output: 2 (One in Apple, one in APPLE)
+
+# 5. COUNT ELEMENTS IN A SPECIFIC RANGE
+s5 = "ababa"
+# Count 'a' starting from index 2
+print("5. Count 'a' from index 2:", s5.count('a', 2))
+# Output: 2
+
+# 6. COUNT OVERLAPPING (Important: .count() does not count overlaps)
+s6 = "aaaaa"
+print("6. Count of 'aa':", s6.count('aa'))
+# Output: 2 (It takes index 0-1 and 2-3)
+
+# 7. COUNT BOOLEAN VALUES IN A LIST
+L7 = [True, False, True, True]
+print("7. Count of True:", L7.count(True))
+# Output: 3
+
+# 8. COUNT SPACES IN A SENTENCE
+s8 = "Python is a great language"
+print("8. Count of spaces:", s8.count(' '))
+# Output: 4
+
+# 9. COUNT WORDS AFTER SPLITTING
+s9 = "red green blue red yellow red"
+words = s9.split()
+print("9. Count of 'red' in list:", words.count('red'))
+# Output: 3
+
+# 10. COUNT NESTED LISTS (Must be an exact match)
+L10 = [[1, 2], [3, 4], [1, 2]]
+print("10. Count of [1, 2]:", L10.count([1, 2]))
+# Output: 2
