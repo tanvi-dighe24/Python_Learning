@@ -1,0 +1,67 @@
+# 1. BASIC CONVERSION TO UPPERCASE
+s1 = "hello world"
+print("1. Uppercase:", s1.upper())
+# Output: HELLO WORLD
+
+# 2. BASIC CONVERSION TO LOWERCASE
+s2 = "PYTHON PROGRAMMING"
+print("2. Lowercase:", s2.lower())
+# Output: python programming
+
+# 3. CASE-INSENSITIVE COMPARISON (Interview Favorite)
+# This ensures "Python" matches "python"
+input_str = "Python"
+if input_str.lower() == "python":
+    print("3. Match found!")
+# Output: Match found!
+
+# 4. CONVERTING A LIST OF STRINGS TO UPPERCASE
+fruits = ['apple', 'banana', 'cherry']
+upper_fruits = []
+for f in fruits:
+    upper_fruits.append(f.upper())
+print("4. Upper List:", upper_fruits)
+# Output: ['APPLE', 'BANANA', 'CHERRY']
+
+# 5. TOGGLING CASE MANUALLY (Checking first)
+char = 'a'
+if char.islower():
+    print("5. To Upper:", char.upper())
+# Output: A
+
+# 6. FORMATTING USER INPUT
+# Useful for "Yes/No" prompts
+answer = "YeS"
+if answer.upper() == "YES":
+    print("6. Proceeding...")
+# Output: Proceeding...
+
+# 7. CLEANING DATA IN A DICTIONARY
+# Converting keys to lowercase to avoid duplicates
+data = {"Name": "Alice", "AGE": 25}
+clean_data = {}
+for k, v in data.items():
+    clean_data[k.lower()] = v
+print("7. Clean Dictionary:", clean_data)
+# Output: {'name': 'Alice', 'age': 25}
+
+# 8. EXTRACTING ONLY UPPERCASE CHARACTERS
+s8 = "PyThOn"
+only_upper = ""
+for char in s8:
+    if char.isupper():
+        only_upper += char
+print("8. Upper only:", only_upper)
+# Output: PTO
+
+# 9. SWAPPING CASE (Built-in alternative)
+s9 = "Hello World"
+print("9. Swapped:", s9.swapcase())
+# Output: hELLO wORLD
+
+# 10. SENTENCE FORMATTING (Combining lower and upper)
+# Making only the first letter uppercase (Capitalize)
+s10 = "i am learning python"
+formatted = s10[0].upper() + s10[1:].lower()
+print("10. Formatted:", formatted)
+# Output: I am learning python
