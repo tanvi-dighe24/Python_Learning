@@ -4,7 +4,7 @@ here I performed all possible Python Programing operations, methods, functions, 
 #platform used: IDLE for python (64 bits)
 Language for programing : Pyhton
 Topic covered in: Basic to Advance level of python, libraries of python
-Framework: Django, Flask
+Frameworks for devlopment and deployement: Django, Flask
 
 
 #it's been a many days where, I m into solving problems of coding through py.programming.
