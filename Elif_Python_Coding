@@ -1,0 +1,126 @@
+Elif
+#  ELIF STATEMENTS (20 QUESTIONS) Logic Explained: 💻🧠
+
+# 1. Number Sign Check
+num = -5
+if num > 0: print("Positive")
+elif num < 0: print("Negative")
+else: print("Zero")
+# Output: Negative
+
+# 2. Age Category
+age = 15
+if age < 13: print("Child")
+elif 13 <= age <= 19: print("Teenager")
+else: print("Adult")
+# Output: Teenager
+
+# 3. Student Grade
+marks = 78
+if marks >= 90: print("A")
+elif marks >= 75: print("B")
+elif marks >= 60: print("C")
+elif marks >= 35: print("D")
+else: print("Fail")
+# Output: B
+
+# 4. Weekday or Weekend
+day = "Sunday"
+if day in ["Saturday", "Sunday"]:
+  print("Weekend")
+elif day in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]:
+  print("Weekday")
+else: 
+  print("Invalid Day")
+# Output: Weekend
+
+# 5. Seasons by Month
+month = 5
+if month in [11, 12, 1, 2]: print("Winter")
+elif month in [3, 4, 5, 6]: print("Summer")
+elif month in [7, 8, 9, 10]: print("Monsoon")
+else: print("Invalid Month")
+# Output: Summer
+
+# 6. Temperature Check
+temp = 22
+if temp < 15: print("Cold")
+elif 15 <= temp <= 30: print("Moderate")
+else: print("Hot")
+# Output: Moderate
+
+# 7. Digit Count
+num = 45
+if -9 <= num <= 9: print("Single-digit")
+elif -99 <= num <= 99: print("Double-digit")
+else: print("More")
+# Output: Double-digit
+
+# 8. Weight Category (BMI Logic)
+weight_status = "Overweight"
+if weight_status == "Underweight": print("Underweight")
+elif weight_status == "Normal": print("Normal weight")
+elif weight_status == "Overweight": print("Overweight")
+# Output: Overweight
+
+# 9. Character Type
+char = 'a'
+if char.lower() in 'aeiou': print("Vowel")
+elif char.isalpha(): print("Consonant")
+else: print("Other symbol")
+# Output: Vowel
+
+# 10. Divisibility Check
+num = 9
+if num % 2 == 0: print("Divisible by 2")
+elif num % 3 == 0: print("Divisible by 3")
+else: print("Neither")
+# Output: Divisible by 3
+
+# 11. Salary Range
+sal = 45000
+if sal < 30000: print("Low")
+elif 30000 <= sal <= 60000: print("Medium")
+else: print("High")
+# Output: Medium
+
+# 12. Triangle Type
+a, b, c = 5, 5, 5
+if a == b == c: print("Equilateral")
+elif a == b or b == c or a == c: print("Isosceles")
+else: print("Scalene")
+# Output: Equilateral
+
+# 13. T-Shirt Size
+size = "M"
+if size == "S": print("Small")
+elif size == "M": print("Medium")
+elif size == "L": print("Large")
+elif size == "XL": print("Extra Large")
+# Output: Medium
+
+# 14. Alphabet, Number, or Special
+inp = "@"
+if inp.isalpha(): print("Alphabet")
+elif inp.isdigit(): print("Number")
+else: print("Special Character")
+# Output: Special Character
+
+# 15. Year Check
+year = 2024
+if year <= 0: print("Invalid")
+elif (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0): print("Leap Year")
+else: print("Common Year")
+# Output: Leap Year
+
+# 16. Ticket Class
+ticket = "Business"
+if ticket == "Economy": print("Budget Travel")
+elif ticket == "Business": print("Professional Travel")
+elif ticket == "First Class": print("Luxury Travel")
+# Output: Professional Travel
+
+# 17. Price Range
+price = 5000
+if price < 1000: print("Budget")
+elif 1000 <= price <= 10000
