@@ -1,0 +1,607 @@
+
+#important programming questions
+
+
+
+#prime number:
+
+
+
+
+Definition: A number greater than 1 that has only two factors: 1 and itself.
+
+
+
+
+Examples: 2, 3, 5, 7, 11
+
+
+
+
+Example: 7 (only divisible by 1 and 7)
+
+
+1,2,3,4,5,6,7
+
+
+
+
+n=int(input('enter a number:'))#7
+
+
+count=0
+
+
+for i in range(1,n+1):#1,2,3,4,5,6,7
+
+
+    if n%i==0:
+
+
+        count=count+1
+
+
+if count==2:
+
+
+    print('prime number')
+
+
+else:
+
+
+    print('not a prime number')
+
+
+    
+
+
+
+
+
+#strong number:
+
+
+
+
+Definition: A number where the sum of the factorials of its digits equals the number itself.
+
+
+
+
+Examples: 1, 2, 145
+
+
+
+
+Example: 145
+
+
+
+
+1! + 4! + 5! = 1 + 24 + 120 = 145
+
+
+
+5!-->5*4*3*2*1
+
+
+
+n=int(input('enter a number:'))
+
+
+Num=n
+
+
+Sum=0
+
+
+
+while n>0:
+
+
+    ld=n%10#1
+
+
+    fact=1
+
+
+    for i in range(1,ld+1):#1
+
+
+        fact=fact*i
+
+
+
+    Sum=Sum+fact
+
+
+    n=n//10
+
+
+
+if Sum==Num:
+
+
+    print('strong number')
+
+
+else:
+
+
+    print('not a strong number')
+
+
+    
+
+
+
+
+
+
+
+#armstrong number:
+
+
+
+
+Definition: A number equal to the sum of its digits each raised to the
+
+
+power of the number of digits.
+
+
+
+
+Examples: 153, 370, 371, 407
+
+
+
+
+Example: 153
+
+
+
+
+1³ + 5³ + 3³ = 1 + 125 + 27 = 153
+
+
+
+n=int(input('enter a number:'))
+
+
+l=len(str(n))
+
+
+Num=n
+
+
+Sum=0
+
+
+
+while n>0:
+
+
+    ld=n%10
+
+
+    Sum=Sum+ld**l
+
+
+    n=n//10
+
+
+
+if Sum==Num:
+
+
+    print('arm strong number')
+
+
+else:
+
+
+    print('not armstrong number')
+
+
+
+
+#perfect number:
+
+
+
+
+Definition: A number equal to the sum of its proper divisors (excluding itself).
+
+
+
+
+Examples: 6, 28, 496
+
+
+
+
+Example: 6
+
+
+
+
+Divisors: 1, 2, 3 → 1 + 2 + 3 = 6
+
+
+
+n=int(input('enter a number:'))
+
+
+Sum=0
+
+
+
+for i in range(1,n):
+
+
+    if n%i==0:
+
+
+        Sum=Sum+i
+
+
+
+if Sum==n:
+
+
+    print('perfect number')
+
+
+else:
+
+
+    print('not a perfct number')
+
+
+    
+
+
+
+
+#Neon number:
+
+
+
+
+Definition: A number where the sum of digits of its square equals the number itself.
+
+
+
+
+Examples: 1, 9
+
+
+
+
+Example: 9
+
+
+
+
+9² = 81 → 8 + 1 = 9
+
+
+
+n=int(input('enter a number:'))
+
+
+square=n**2
+
+
+Sum=0
+
+
+while square>0:
+
+
+    ld=square%10
+
+
+    Sum=Sum+ld
+
+
+    square=square//10
+
+
+
+if Sum==n:
+
+
+    print('Neon')
+
+
+else:
+
+
+    print('not neon')
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+
+'''
+
+
+#Duck number:
+
+
+
+
+Definition: A number that contains at least one zero, but not at the beginning.
+
+
+
+
+Examples: 10, 102, 203
+
+
+
+
+Example: 102 (contains 0, not at start)
+
+
+
+
+
+#spy number:
+
+
+
+
+Definition: A number where the sum of digits equals the product of digits.
+
+
+
+
+Examples: 1124, 123
+
+
+
+
+Example: 1124
+
+
+
+
+Sum = 1+1+2+4 = 8
+
+
+
+
+Product = 1×1×2×4 = 8
+
+
+
+
+
+#Automarphic number:
+
+
+
+
+Definition: A number whose square ends with the same number.
+
+
+
+
+Examples: 5, 6, 25, 76
+
+
+
+
+Example: 25
+
+
+
+
+25² = 625 → ends with 25
+
+
+
+
+
+#Magic number:
+
+
+
+
+Definition: A number whose repeated sum of digits (until a single digit) equals 1.
+
+
+
+
+Examples: 10, 19, 28,55,154,64,
+
+
+
+
+Example: 19
+
+
+
+
+1 + 9 = 10 → 1 + 0 = 1
+
+
+
+
+#PAllindrome number:
+
+
+
+
+Definition: A number that reads the same forward and backward.
+
+
+
+
+Examples: 121, 131, 444
+
+
+
+
+Example: 121 (same both ways)
+
+
+
+
+#find factorial of a number
+
+
+
+5!-->5*4*3*2*1
+
+
+
+
+
+#find product of number
+
+
+
+
+
+#Fibonacci Number
+
+
+
+
+
+Definition: A sequence where each number is the sum of the previous two.
+
+
+
+
+Examples: 0, 1, 1, 2, 3, 5, 8
+
+
+
+
+Example: 5 = 2 + 3
+
+
+
+
+
+#Harshad (Niven) Number
+
+
+
+
+
+Definition: A number divisible by the sum of its digits.
+
+
+
+
+Examples: 18, 21, 54
+
+
+
+
+Example: 18
+
+
+
+
+1 + 8 = 9 → 18 ÷ 9 = 2
+
+
+
+
+
+#Disarium Number
+
+
+
+
+
+Definition: Sum of digits powered with their positions equals the number.
+
+
+
+
+Examples: 89, 135
+
+
+
+
+Example: 89
+
+
+
+
+8¹ + 9² = 8 + 81 = 89  
+
+
+
+
+
+#Happy Number
+
+
+
+
+
+Definition: Replacing number by sum of squares of digits repeatedly gives 1.
+
+
+
+
+Examples: 19, 7
+
+
+
+
+Example: 19
+
+
+
+
+1² + 9² = 82 → 8² + 2² = 68 → ... → 1
+
+
+
+
+
+#Kaprekar Number
+
+
+
+
+
+Definition: Square of number can be split into two parts whose sum equals the number.
+
+
+
+
+Examples: 9, 45
+
+
+
+
+Example: 45
+
+
+
+
+45² = 2025 → 20 + 25 = 45
+
+
